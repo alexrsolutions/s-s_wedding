@@ -10,7 +10,6 @@ const Home: React.FC = (props) => {
 
     return (
         <div>
-
             <Section id="home">
                 <div className="homebases">
                     <NavigationBar/>
@@ -111,7 +110,7 @@ const Home: React.FC = (props) => {
                         <Container>
                             <Row xs="1" sm="1" md="3" style={{ margin: '15px 0px' }}>
                                 <Col>
-                                    <img style={{ width: '100%' }} src="/small5.jpg" alt=""/>
+                                    <img className="first-stay" alt=""/>
                                     <br/>
                                     <p className="lead" style={{ paddingTop: '15px' }}>SHERATON FLINDERS</p>
                                     <br/>
@@ -121,7 +120,7 @@ const Home: React.FC = (props) => {
                                     <p className="lead">Flinders Vic 3214</p>
                                 </Col>
                                 <Col>
-                                    <img style={{ width: '100%' }} src="/small5.jpg" alt=""/>
+                                    <img className="second-stay" alt=""/>
                                     <br/>
                                     <p className="lead" style={{ paddingTop: '15px' }}>SHERATON FLINDERS</p>
                                     <br/>
@@ -131,7 +130,7 @@ const Home: React.FC = (props) => {
                                     <p className="lead">Flinders Vic 3214</p>
                                 </Col>
                                 <Col>
-                                    <img style={{ width: '100%' }} src="/small5.jpg" alt=""/>
+                                    <img className="third-stay" alt=""/>
                                     <br/>
                                     <p className="lead" style={{ paddingTop: '15px' }}>SHERATON FLINDERS</p>
                                     <br/>

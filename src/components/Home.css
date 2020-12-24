@@ -33,6 +33,21 @@
     padding: 150px 50px;
 }
 
+.first-stay{
+    content: url("../images/small5.jpg");
+    width: 100%;
+}
+
+.second-stay{
+    content: url("../images/small5.jpg");
+    width: 100%;
+}
+
+.third-stay{
+    content: url("../images/small5.jpg");
+    width: 100%;
+}
+
 .save-date{
     background: linear-gradient(rgba(0, 0, 0, 0.350),
     rgba(0, 0, 0, 0.350)),
