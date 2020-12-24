@@ -164,7 +164,7 @@ const Home: React.FC = (props) => {
             <Section id="rsvp">
                 <div className="rsvp">
                     <div className="rsvp-container">
-                        <h4 className="display-4" style={{ marginBottom: '15px' }}>SAY YOU'LL BE THERE</h4>
+                        <h4 className="display-4" style={{ marginBottom: '15px', marginTop: '40px' }}>SAY YOU'LL BE THERE</h4>
                         <p className="lead">Please let us know if you can make it by <br/> Febuary 15th at the latest, please!</p>
                         <Container>
                             <Row xs="1" sm="1" md="3" style={{ margin: '15px 0px' }}>
