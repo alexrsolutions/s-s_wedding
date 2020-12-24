@@ -32,14 +32,14 @@ const Home: React.FC = (props) => {
                             <br/>
                             <Row xs="1" sm="1" md="2" style={{ margin: '15px 0px' }}>
                                 <Col>
-                                    <img style={{ width: '70%' }} src="/tall1.jpg" alt=""/>
+                                    <img className="husband-img" alt=""/>
                                     <br/>
                                     <p className="lead" style={{ paddingTop: '15px' }}>
                                         You have been my best friend, mentor, playmate, confidant, and my greatest challenge. But most importantly, you are the love of my life and you make me happier than I could ever imagine and more loved than I ever thought possible.
                                     </p>
                                 </Col>
                                 <Col>
-                                    <img style={{ width: '70%' }} src="/tall2.jpg" alt=""/>
+                                    <img className="wife-img" alt=""/>
                                     <br/>
                                     <p className="lead" style={{ paddingTop: '15px' }}>
                                         I love you for your beauty, your intelligence, your kindness… and for the way you always know how to make me feel so special. So on top of all the other vows that I will make to you on our wedding day, I also vow to always appreciate how lucky I am.
@@ -151,10 +151,10 @@ const Home: React.FC = (props) => {
                         <Container>
                             <Row xs="1" sm="1" md="2" style={{ margin: '15px 0px' }}>
                                 <Col>
-                                    <img style={{ width: '80%' }} src="/amazon.png" alt=""/>
+                                    <img className="amazon-img" alt=""/>
                                 </Col>
                                 <Col>
-                                    <img style={{ width: '80%' }} src="/target.png" alt=""/>
+                                    <img className="target-img" alt=""/>
                                 </Col>
                             </Row>
                         </Container>

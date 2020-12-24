@@ -21,6 +21,16 @@
     padding: 125px 50px;
 }
 
+.husband-img{
+    width: 80%;
+    content: url("../images/tall1.jpg");
+}
+
+.wife-img{
+    width: 80%;
+    content: url("../images/tall2.jpg");
+}
+
 .details-container{
     padding: 150px 50px;
 }
@@ -75,6 +85,16 @@
 
 .gifts-images-container{
     padding: 35px 15px;
+}
+
+.amazon-img{
+    width: 80%;
+    content: url("../images/amazon.png");
+}
+
+.target-img{
+    width: 80%;
+    content: url("../images/target.png");
 }
 
 .rsvp{
