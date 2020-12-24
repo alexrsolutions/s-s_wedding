@@ -1,0 +1,15 @@
+.navigationbar{
+    background-color: transparent;
+    width: 100%;
+    position: fixed;
+    transition: background-color 200ms linear;
+    z-index: 2;
+}
+
+.navigationbar.active{
+    background-color: #ccd0dd;
+    width: 100%;
+    position: fixed;
+    transition: background-color 200ms linear;
+    z-index: 2;
+}

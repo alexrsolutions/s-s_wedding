@@ -1,0 +1,90 @@
+.homebases{
+    background: linear-gradient(rgba(0, 0, 0, 0.350),
+    rgba(0, 0, 0, 0.350)),
+    url("../images/wedding-pic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;  
+    width: 100%;
+    height: 100vh;
+}
+
+.vertical-center{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.join-container{
+    padding: 125px 50px;
+}
+
+.details-container{
+    padding: 150px 50px;
+}
+
+.where{
+    background-color: #fcfcfc;
+}
+
+.where-container{
+    padding: 150px 50px;
+}
+
+.save-date{
+    background: linear-gradient(rgba(0, 0, 0, 0.350),
+    rgba(0, 0, 0, 0.350)),
+    url("../images/hug-pic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+.save-date-container{
+    padding: 150px 15px;
+}
+
+.gifts{
+    background: linear-gradient(rgba(255, 255, 255, 0.65),
+    rgba(255, 255, 255, 0.65)),
+    url("../images/pebels-pic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+}
+
+.gifts-title-container{
+    padding: 35px 15px;
+}
+
+.gifts-images-container{
+    padding: 35px 15px;
+}
+
+.hashtag{
+    background-color: grey;
+}
+
+.jumbotron{
+    margin-bottom: 0rem !important;
+}
+
+.lead{
+    margin-top: 0 !important;
+    margin-bottom: 0rem !important;
+}
+
+.rsvp-form{
+    padding: "50% 50%";
+}
+
+.footer{
+    height: 100px;
+}
+
+.footer-mar{
+    overflow: auto;
+    line-height: 100px;
+    margin: auto 15px;
+}
