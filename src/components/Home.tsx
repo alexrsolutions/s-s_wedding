@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Home.css';
 import NavigationBar from '../components/NavigationBar';
-import { Container, Jumbotron, Row, Col } from 'reactstrap';
+import { Container, Jumbotron, Row, Col, Button, Form, FormGroup, Input } from 'reactstrap';
 
 const Home: React.FC = (props) => {
+
+    const [rSelected, setRSelected] = useState(Number);
+
     return (
         <div>
             <div className="homebases">
@@ -134,14 +137,38 @@ const Home: React.FC = (props) => {
             </div>
             <div className="gifts">
                 <div className="where-container">
-                    <h4 className="display-4" style={{ marginBottom: '50px' }}>WHERE TO STAY?</h4>
+                    <h4 className="display-4" style={{ marginBottom: '50px' }}>GIVE THE GIFT OF PRESENTS</h4>
                     <Container>
                         <Row xs="1" sm="1" md="2" style={{ margin: '15px 0px' }}>
                             <Col>
-                                <img style={{ width: '100%' }} src="/small5.jpg" alt=""/>
+                                <img style={{ width: '80%' }} src="/amazon.png" alt=""/>
                             </Col>
                             <Col>
-                                <img style={{ width: '100%' }} src="/small5.jpg" alt=""/>
+                                <img style={{ width: '80%' }} src="/target.png" alt=""/>
+                            </Col>
+                        </Row>
+                    </Container>
+                </div>
+            </div>
+            <div className="rsvp">
+                <div className="rsvp-container">
+                    <h4 className="display-4" style={{ marginBottom: '15px' }}>SAY YOU'LL BE THERE</h4>
+                    <p className="lead">Please let us know if you can make it by <br/> Febuary 15th at the latest, please!</p>
+                    <Container>
+                        <Row xs="1" sm="1" md="3" style={{ margin: '15px 0px' }}>
+                            <Col sm="12" md={{ size: 6, offset: 3 }}>
+                                <div className="form-container">
+                                    <Form>
+                                        <FormGroup>
+                                            <Input type="text" name="names" id="names" placeholder="YOUR NAME / NAMES" />
+                                        </FormGroup>
+                                        <FormGroup>
+                                            <Button name="radio" style={{ margin: '10px 20px 0px 10px', padding: '15px 50px' }} color="primary" onClick={() => setRSelected(1)} active={rSelected === 1}>CAN'T WAIT</Button>
+                                            <Button name="radio" style={{ margin: '10px 20px 0px 10px', padding: '15px 50px' }} color="primary" onClick={() => setRSelected(2)} active={rSelected === 2}>CAN'T COME</Button>
+                                        </FormGroup>
+                                        <Button style={{ margin: '15px', padding: '15px 100px' }} size="lg">RSVP</Button>
+                                    </Form>
+                                </div>
                             </Col>
                         </Row>
                     </Container>
