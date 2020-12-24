@@ -11,11 +11,19 @@ import {
   } from 'reactstrap';
 import '../components/NavigationBar.css'
 import '../fonts/fonts.css'
+import { useScrollSection } from 'react-scroll-section';
 
 const NavigationBar: React.FC = (props) => {
 
     const [isOpen, setIsOpen] = useState(false);
     const [navbar, setNavbar] = useState(false);
+
+    const homeSection = useScrollSection('home');
+    const ourStorySection = useScrollSection('our-story');
+    const weddingSection = useScrollSection('wedding');
+    const acommStorySection = useScrollSection('acomm');
+    const registrySection = useScrollSection('registry');
+    const rsvpSection = useScrollSection('rsvp');
 
     const toggle = () => setIsOpen(!isOpen);
 
@@ -32,27 +40,27 @@ const NavigationBar: React.FC = (props) => {
     return (
         <div>
             <Navbar className={ navbar ? 'navigationbar active' : 'navigationbar' } light expand="md">
-                <NavbarBrand style={{ font:'Dual-300' }} href="/">SALVADOR & SONIA</NavbarBrand>
+                <NavbarBrand style={{ font:'Dual-300' }} >SALVADOR & SONIA</NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
                 <Nav className="ml-auto" navbar>
                     <NavItem>
-                        <NavLink href="/components/">HOME</NavLink>
+                        <NavLink onClick={ homeSection.onClick }>HOME</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink href="/components/">OUR STORY</NavLink>
+                        <NavLink onClick={ ourStorySection.onClick }>OUR STORY</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink href="/components/">WEDDING</NavLink>
+                        <NavLink onClick={ weddingSection.onClick }>WEDDING</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink href="/components/">ACOMM</NavLink>
+                        <NavLink onClick={ acommStorySection.onClick }>ACOMM</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink href="/components/">REGISTRY</NavLink>
+                        <NavLink onClick={ registrySection.onClick }>REGISTRY</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink href="/components/">RSVP</NavLink>
+                        <NavLink onClick={ rsvpSection.onClick }>RSVP</NavLink>
                     </NavItem>
                     <UncontrolledDropdown nav inNavbar>
                     </UncontrolledDropdown>
